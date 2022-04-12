@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Athene', sans-serif;
+    src: url(AtheneFF/Athene.otf);
+  }
+
+
+body { 
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.bg {
+    top: -30;
+    left: -30;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    width: 100vw;
+    /* height: 100vh; */
+    z-index: -1;
+    filter: blur(0px);
+     
+}
+
+.loading-text {
+    font-family: 50px;
+    color: #000;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+#demos .owl-carousel .item {
+height: 100%;
+/* width: 100%; */
+/* background: #4DC7A0; */
+padding: 1rem;
+}
+
+#demos{
+    padding-top: 10rem;
+}
+
+ .owl-nav{
+    display: none;
+ }
+
+ .owl-dots{
+    display: none;
+ }
+
+ .owl-stage-outer{
+    margin-bottom: 5rem;
+ }
+
+ h4{
+    font-family: 'Athene', sans-serif;
+    /* font-family: 'Maginia', sans-serif; */
+    /* font-family: 'FreeMono', sans-serif; */
+    /* font-family: 'FreeSans', sans-serif;
+    font-family: 'FreeSerif', sans-serif; */
+ }
+
+ .picTitle{
+     line-height:0;
+     color:rgb(120, 120, 120);
+     font-family: 'Athene', sans-serif;
+ }
+
+ .picSub{
+    font-family: 'Athene', sans-serif;
+    color:rgb(120, 120, 120);
+    margin-top: -15px;
+ }
+
+ .middle1{
+    margin: 20rem 0;
+    color:rgb(120, 120, 120);
+    font-family: 'Maginia';
+    
+ }
+
+ .middle2{
+     margin: 7rem 0;
+     color:rgb(120, 120, 120);
+     font-family: 'Maginia';
+ }
+
+ .middle3{
+    margin: 10rem 0;
+    color:rgb(120, 120, 120);
+    font-family: 'Maginia';
+}
+
+.middle4{
+    margin: 8rem 0;
+    color:rgb(120, 120, 120);
+    font-family: 'Maginia';
+}
+
+.middle5{
+    margin: 13rem 0; 
+    color:rgb(120, 120, 120);
+    font-family: 'Maginia';
+}
+
+.middle6{
+    margin: 8rem 0;
+    color:rgb(120, 120, 120);
+    font-family: 'Maginia';
+}
+
+.middle7{
+    margin: 15rem 0; 
+    color:rgb(88, 88, 88);
+    font-family: 'Maginia';
+}
+
+.header{
+    display: inline-block;
+}
+
+header{
+    overflow: hidden;
+    position: fixed; 
+    right: 30%;
+    z-index: 10;
+}
+
+h1{
+    font-family: 'Athene', sans-serif;
+    font-size: 40px;
+    line-height: 100px;
+    color:rgb(69, 69, 69);
+    display: inline-block;
+}
+
+/* .modal-btn{
+    font-family: 'Athene', sans-serif;
+    font-size: 40px;
+    line-height: 80px;
+    color:rgb(120, 120, 120);
+} */
+
+/* MODAL */
+
+
+.modal-container {
+    position: relative;
+    display: inline-block;
+    font-family: 'Athene', sans-serif;
+    z-index: 1000;
+}
+
+.modal-container .modal-btn {
+    display: inline-block;
+    font-family: 'Athene', sans-serif;
+    color: #6F6F6F;
+    font-size: 40px;
+    line-height: 100px;
+    height: 0;
+}
+
+.modal-container .modal-content, .modal-container .modal-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+    z-index: 1000;
+}
+.modal-container .modal-close {
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    /* top: 5px; */
+    /* padding-top: 3px; */
+    background: #fff;
+    font-size: 16px;
+    width: 25px;
+    /* height: 25px; */
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-container .modal-close:hover {
+    color: #333;
+}
+.modal-container .modal-content-btn {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    /* bottom: 20px; */
+    right: 30px;
+    /* background: #446cb3; */
+    color: #fff;
+    width: 50px;
+    border-radius: 2px;
+    font-size: 14px;
+    /* height: 32px; */
+    /* padding-top: 9px; */
+    font-weight: normal;
+}
+.modal-container .modal-content-btn:hover {
+    color: #fff;
+    background: #365690;
+}
+.modal-container #modal-toggle {
+    display: none;
+}
+.modal-container #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
+    background-color: rgba(255, 255, 255, 0.871);
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 800;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+.modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+    opacity: 1;
+    max-width: 400px;
+    width: 400px;
+    height: 500px;
+    padding: 10px 30px;
+    position: fixed;
+    left: calc(50% - 200px);
+    top: 12%;
+    border-radius: 4px;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    visibility: visible;
+    /* box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6); */
+}
+
+.hovering{
+    font-size: 40px;
+    line-height: 100px;
+    color: #6F6F6F;
+    z-index: 1000;
+}
+
+.category{
+    font-size: 40px;
+    line-height: 100px;
+    color: #6F6F6F;
+    z-index: 1000;
+}
+
+
+.category:hover{
+    color: #a1a1a1;
+}
+
+.hovering:hover{
+    color: #a1a1a1;
+}
+
+@media (max-width: 400px) {
+    .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+        left: 0;
+   }
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CURSOR */
+* {
+	 cursor: none;
+}
+ @media only screen and (max-width: 1000px) {
+	 * {
+		 cursor: initial;
+	}
+}
+ .circle-cursor {
+	 position: fixed;
+	 left: 0;
+	 top: 0;
+	 pointer-events: none;
+	 border-radius: 50%;
+	 box-sizing: border-box;
+}
+
+ .circle-cursor--outer {
+	 width: 30px;
+	 height: 30px;
+	 border: 1px solid black;
+	 z-index: 12000;
+}
+ .circle-cursor--inner {
+	 width: 5px;
+	 height: 5px;
+	 left: -2.5px;
+	 top: -2.5px;
+	 z-index: 11000;
+	 background: black;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   
+    header{
+     right: 10%;
+    }
+ 
+     h1{
+         font-size: 30px;
+     }
+ 
+     .modal-container .modal-btn {
+         font-size: 30px;
+     }
+ 
+     .circle-cursor .circle-cursor--inner{
+         display:none;
+     }
+ 
+     .circle-cursor .circle-cursor--outer{
+         display:none;
+     }
+ 
+     .hovering{
+         font-size: 35px;
+         line-height: 90px;
+         color: #6F6F6F;
+     }
+     
+     .category{
+         font-size: 35px;
+         line-height: 90px;
+         color: #6F6F6F;
+     }
+ 
+     .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+         width: 300px;
+         left: 15%;
+     }
+
+ }

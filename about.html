@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href="http://fonts.cdnfonts.com/css/maginia" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/freemono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>OMAIRA 0TL - CONTACTO </title>
+</head>
+<body>
+
+    <!-- CURSOR-->
+<div class="circle-cursor circle-cursor--inner"></div>
+<div class="circle-cursor circle-cursor--outer"></div>
+
+    <section class="bg">
+     <!-- header -->
+     <header class="header">
+        <h1>OMAIRA OTL. -</h1>
+            <div class="modal-container">
+                <input id="modal-toggle" type="checkbox">
+                <label class="modal-btn" for="modal-toggle"> CONTACTO</label> 
+                <label class="modal-backdrop" for="modal-toggle"></label>
+                <div class="modal-content">
+                  <!-- <label class="modal-close" for="modal-toggle">&#x2715;</label> -->
+                 
+                 <a href="intro.html"><h2 class="hovering">PORTFOLIO</h2></a>
+                 <a href="intro.html"> <h2 class="hovering">RETRATOS</h2> </a>
+                 <a href="about.html"> <p class="category">CONTACTO</p>  </a>
+                  <!-- <label class="modal-content-btn" for="modal-toggle">OK</label>    -->
+                </div>          
+              </div>  
+</header>
+
+
+<div class="aboutme">
+    <p class="aboutText">
+        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper commodo luctus.
+         Pellentesque rutrum ex neque, sit amet eleifend risus gravida eget. Etiam sollicitudin ipsum non varius viverra. 
+         In id commodo lacus. Suspendisse vitae pretium metus. Quisque dictum nulla feugiat, varius purus ut, mollis sem. 
+         Duis luctus lectus nec aliquam porttitor.”
+    </p>
+    <p class="name"> - Omaira Otl.</p>
+    <div class="socialbtns">
+        <ul>
+        <li><a href="#" target="_blank" class="fa fa-lg fa-facebook"></a></li>
+        <li><a href="mailto:mkt@teamsquadra.com" target="_blank" class="fa fa-lg fa-envelope" ></a></li>
+        <li><a href="#" target="_blank" class="fa fa-lg fa-linkedin"></a></li>
+        <li><a href="#" target="_blank" class="fa fa-lg fa-instagram"></a></li>
+        </ul>
+      </div>
+</div>
+</section>
+
+<div class="loading-text">0%</div>
+
+<script src="loading.js"></script>
+
+<script>
+ try{Typekit.load({ async: true });}catch(e){}
+
+//fade in/fade out transition 
+document.body.classList.add('fade');
+
+document.addEventListener("DOMContentLoaded", () => {
+window.setTimeout(function() {
+document.body.classList.remove('fade');
+}, 700);
+});
+</script>
+<script src="cursor.js"></script>
+</body>
+</html>

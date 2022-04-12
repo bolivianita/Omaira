@@ -1,0 +1,271 @@
+body{
+background-color: black;
+margin: 0;
+text-align: center;
+}
+
+@font-face {
+  font-family: 'Athene', sans-serif;
+  src: url(AtheneFF/Athene.otf);
+}
+
+.bg {
+  top: -30;
+  left: -30;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  width: 100vw;
+  /* height: 100vh; */
+  z-index: -1;
+  filter: blur(0px);
+   
+}
+
+.loading-text {
+  font-family: 50px;
+  color: #000;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+body.fade {
+  opacity: 0;
+}
+
+.contentwrap {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1; 
+
+}
+
+.centeredinfo{
+font-family: 'Athene', sans-serif;
+  position:absolute;
+  z-index: 999;
+  color: white;
+  /* height: 2em;
+  width: 2em; */
+  top: 35%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+h1{
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+p{
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.enter{
+  /* background-color: black; */
+  border-color: white;
+  background: none;
+	color: inherit;
+  /* color: white; */
+  padding: 1rem;
+  font-family: 'Athene', sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.enter:hover{
+  background-color: white;
+  color: black;
+}
+
+.content1,
+.content2 {
+  flex: 1;
+  flex-basis: 20em;
+}
+
+.content1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  animation: slideshow 7s infinite steps(1);
+  height: 100vh;
+}
+
+.content2{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  animation: slideshows 6.3s infinite steps(1);
+  height: 100vh;
+}
+
+
+ @keyframes slideshow {
+	 0%, 100% {
+		 background-image: url("images/slideshow1/IMG_5659.jpg");
+     background-size:     cover;                     
+     background-repeat:   no-repeat;
+     background-position: center center;
+	}
+	 10% {
+		 background-image: url("images/slideshow1/IMG_5661.jpg");
+     background-size:     cover;                      
+     background-repeat:   no-repeat;
+     background-position: center center;
+	}
+	 20% {
+		 background-image:  url("images/slideshow1/IMG_5663.jpg");
+     background-size:     cover;                      /* <------ */
+     background-repeat:   no-repeat;
+     background-position: center center;
+    }
+	 30% {
+		 background-image:  url("images/slideshow1/IMG_5665.jpg");
+     background-size:     cover;                      /* <------ */
+     background-repeat:   no-repeat;
+     background-position: center center;
+    }
+	 40% {
+		 background-image:  url("images/slideshow1/IMG_5667.jpg");
+     background-size:     cover;                      /* <------ */
+     background-repeat:   no-repeat;
+     background-position: center center;
+    }
+	 50% {
+		 background-image:   url("images/slideshow1/IMG_5669.jpg");
+     background-size:     cover;                      /* <------ */
+     background-repeat:   no-repeat;
+     background-position: center center;
+    	}
+	 60% {
+		 background-image:  url("images/slideshow1/IMG_5671.jpg");
+     background-size:     cover;                      /* <------ */
+     background-repeat:   no-repeat;
+     background-position: center center;
+    	}
+    70% {
+        background-image:  url("images/slideshow1/IMG_5673.jpg");
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+       }
+  80% {
+        background-image:  url("images/slideshow1/IMG_5685.jpg");
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+         }
+  90% {
+          background-image:  url("images/slideshow1/IMG_5678.jpg");
+          background-size:     cover;                      /* <------ */
+          background-repeat:   no-repeat;
+          background-position: center center;
+        }
+        100% {
+          background-image: url("images/slideshow1/IMG_5681.jpg");
+          background-size:     cover;                      /* <------ */
+          background-repeat:   no-repeat;
+          background-position: center center;
+       }
+}
+
+@keyframes slideshows {
+  0%{
+    background-image: url("images/slideshow2/DSC09964.JPG");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+ }
+  10% {
+    background-image: url("images/slideshow2/IMG_5660.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+ }
+  20% {
+    background-image:  url("images/slideshow2/IMG_5662.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+   }
+  30% {
+    background-image:  url("images/slideshow2/IMG_5664.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+   }
+  40% {
+    background-image:  url("images/slideshow2/IMG_5666.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+   }
+  50% {
+    background-image:   url("images/slideshow2/IMG_5668.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+     }
+  60% {
+    background-image:  url("images/slideshow2/IMG_5670.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+     }
+  70% {
+      background-image:  url("images/slideshow2/IMG_5672.jpg");
+      background-size:     cover;                      /* <------ */
+      background-repeat:   no-repeat;
+      background-position: center center;
+       }
+  80% {
+        background-image:  url("images/slideshow2/IMG_5674.jpg");
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+  }
+  90% {
+    background-image:  url("images/slideshow2/IMG_5679.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+     }
+
+  100% {
+      background-image: url("images/slideshow2/IMG_5682.jpg");
+      background-size:     cover;                      /* <------ */
+      background-repeat:   no-repeat;
+      background-position: center center;
+   }
+}
+
+ html {
+	 height: 100%;
+	 font-size: 100%;
+}
+
+@media  screen and (max-width:700px){
+  .content2{
+    display: none;
+  }
+
+  h1{
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 20px;
+  }
+}
