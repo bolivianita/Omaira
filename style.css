@@ -312,15 +312,15 @@ a{
 @media only screen and (max-width: 600px) {
    
     header{
-     right: 10%;
+     right: 5%;
     }
  
      h1{
-         font-size: 30px;
+         font-size: 25px;
      }
  
      .modal-container .modal-btn {
-         font-size: 30px;
+         font-size: 25px;
      }
  
      .circle-cursor .circle-cursor--inner{
@@ -345,7 +345,34 @@ a{
  
      .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
          width: 300px;
-         left: 15%;
+         left: 3%;
      }
 
+     .middle1{
+        margin:0;  
+     }
+    
+     .middle2{
+         margin: 7rem 0;
+     }
+    
+     .middle3{
+        margin: 0;
+    }
+    
+    .middle4{
+        margin: 0;
+    }
+    
+    .middle5{
+        margin: 0; 
+    }
+    
+    .middle6{
+        margin: 0;
+    }
+    
+    .middle7{
+        margin: 0; 
+    }
  }
